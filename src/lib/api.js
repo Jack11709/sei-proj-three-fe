@@ -1,6 +1,5 @@
 import axios from 'axios'
-
-const baseUrl = '/api'
+import { baseUrl } from '../config'
 
 export async function getPokemon() {
   return axios.get(`${baseUrl}/pokemon`)
